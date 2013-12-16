@@ -37,7 +37,6 @@ class sdStore {
 			'processorsPath' => $corePath . 'processors/'
 		), $config);
 
-		$this->modx->addPackage('sdstore', $this->config['modelPath']);
 		$this->modx->lexicon->load('sdstore:default');
 	}
 

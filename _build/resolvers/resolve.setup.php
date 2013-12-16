@@ -7,9 +7,6 @@ if ($object->xpdo) {
 	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 		case xPDOTransport::ACTION_INSTALL:
 		case xPDOTransport::ACTION_UPGRADE:
-			$modelPath = $modx->getOption('sdstore_core_path',null,$modx->getOption('core_path').'components/sdstore/').'model/';
-			$modx->addPackage('sdstore', $modelPath);
-
 			if (!$provider = $modx->getObject('transport.modTransportProvider', array('service_url:LIKE' => '%simpledream%'))) {
 				$provider = $modx->newObject('transport.modTransportProvider', array(
 					'name' => 'Simple Dream',
