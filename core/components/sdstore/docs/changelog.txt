@@ -1,5 +1,9 @@
 Changelog for sdStore.
 
+1.0.1-pl
+==============
+- Updated for modstore.pro
+
 1.0.0-beta
 ==============
 - Initial release.

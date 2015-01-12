@@ -3,7 +3,7 @@ sdStore
 --------------------
 Author: Vasiliy Naumkin <bezumkin@yandex.ru>
 
-This package will install Simple Dream repository for MODX Revolution.
+This package will install modstore.pro repository for MODX Revolution.
 There you will find:
 
 Last version of free non-exclusive packages

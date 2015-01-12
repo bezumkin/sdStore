@@ -7,13 +7,13 @@ if ($object->xpdo) {
 	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 		case xPDOTransport::ACTION_INSTALL:
 		case xPDOTransport::ACTION_UPGRADE:
-			if (!$provider = $modx->getObject('transport.modTransportProvider', array('service_url:LIKE' => '%simpledream%'))) {
+			if (!$provider = $modx->getObject('transport.modTransportProvider', array('service_url:LIKE' => '%simpledream%', 'OR:service_url:LIKE' => '%modstore%'))) {
 				$provider = $modx->newObject('transport.modTransportProvider', array(
-					'name' => 'Simple Dream',
-					'service_url' => 'http://store.simpledream.ru/extras/',
+					'name' => 'modstore.pro',
+					'service_url' => 'http://modstore.pro/extras/',
 					'username' => !empty($options['email']) && preg_match('/.+@.+\..+/i', $options['email']) ? trim($options['email']) : '',
 					'api_key' => !empty($options['key']) ? trim($options['key']) : '',
-					'description' => 'Repository of Simple Dream',
+					'description' => 'Repository of modstore.pro',
 					'created' => time(),
 				));
 				$provider->save();

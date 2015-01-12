@@ -18,24 +18,24 @@ if (!$exists) {
 	$ru = (bool) ($modx->getOption('manager_language') == 'ru');
 
 	$intro = $ru
-		? 'Установка репозитория Simple Dream. Авторизация требуется, <b>только для загрузки платных пакетов</b>.<br/><br/>
-		   Однако, если вы уже <a href="http://store.simpledream.ru/#enter" target="_blank">зарегистрировались</a> и создали ключ для этого сайта - вы можете указать их прямо сейчас:'
-		: 'Installation of the Simple Dream repository. Authentication required <b>only if you downloading paid packages</b>.<br/><br/>
-		   However, if you already <a href="http://store.simpledream.ru/#enter" target="_blank">registered</a> and created key for this site, you can enter it right now:';
+		? 'Установка репозитория modstore.pro. Авторизация требуется, <b>только для загрузки платных пакетов</b>.<br/><br/>
+		   Однако, если вы уже <a href="http://modstore.pro/#enter" target="_blank">зарегистрировались</a> и создали ключ для этого сайта - вы можете указать их прямо сейчас:'
+		: 'Installation of the modstore.pro repository. Authentication required <b>only if you downloading paid packages</b>.<br/><br/>
+		   However, if you already <a href="http://modstore.pro/#enter" target="_blank">registered</a> and created key for this site, you can enter it right now:';
 
 	$email = 'Email';
 	$email_intro = $ru
-		? 'Введите email, который указан у вас в <a href="http://store.simpledream.ru/cabinet/profile/" target="_blank">профиле магазина</a>.'
-		: 'Enter email, that specified in <a href="http://store.simpledream.ru/cabinet/profile/" target="_blank">your personal office</a>.';
+		? 'Введите email, который указан у вас в <a href="http://modstore.pro/cabinet/profile/" target="_blank">профиле магазина</a>.'
+		: 'Enter email, that specified in <a href="http://modstore.pro/cabinet/profile/" target="_blank">your personal office</a>.';
 
 	$key = $ru ? 'Ключ' : 'Key';
 	$key_intro = $ru
-		? 'Укажите ключ сайта, который вы <a href="http://store.simpledream.ru/cabinet/keys/" target="_blank">создали в личном кабинете</a>.'
-		: 'Specify the key, that you <a href="http://store.simpledream.ru/cabinet/keys/" target="_blank">created in the personal office</a>.';
+		? 'Укажите ключ сайта, который вы <a href="http://modstore.pro/cabinet/keys/" target="_blank">создали в личном кабинете</a>.'
+		: 'Specify the key, that you <a href="http://modstore.pro/cabinet/keys/" target="_blank">created in the personal office</a>.';
 
 	$more = $ru
-		? '<a href="http://store.simpledream.ru/info/connection.html" target="_blank">Дополнительная информация</a>'
-		: '<a href="http://store.simpledream.ru/info/eng.html" target="_blank">Additional information</a>';
+		? '<a href="http://modstore.pro/info/connection.html" target="_blank">Дополнительная информация</a>'
+		: '<a href="http://modstore.pro/info/eng.html" target="_blank">Additional information</a>';
 
 	$output =
 	'<style>
@@ -70,9 +70,11 @@ if (!$exists) {
 				'.$more.'
 			</td>
 			<td style="width:50%; text-align:right;">
-				<a href="http://store.simpledream.ru/" target="_blank">
-					<img src="http://store.simpledream.ru/assets/uploadify/f/d/c/fdc24cc7755ef30e748e8bf5d288bfd4.png" />
+				<!--
+				<a href="http://modstore.pro/" target="_blank">
+					<img src="http://modstore.pro/assets/uploadify/f/d/c/fdc24cc7755ef30e748e8bf5d288bfd4.png" />
 				</a>
+				-->
 			</td></tr>
 		</table>
 	</div>
